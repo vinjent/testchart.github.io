@@ -112,7 +112,7 @@
 		var data=[];
 		$.ajax({
 			type: 'get',				
-			url: 'https://localhost:7034/api/Data?filePath=' + filePath,
+			url: 'http://qtest.ddns.net/api/Data?filePath=' + filePath,
 			success: function (json) {					
 				$.each(JSON.parse(json), function(index, value){
 					if (typeStr === "賣超")
